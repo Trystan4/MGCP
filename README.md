@@ -1,2 +1,2 @@
-# MSPP
-Multi Simple Projects in Python
+# MGCP
+Multi Games Competition in Python
