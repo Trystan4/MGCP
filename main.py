@@ -35,7 +35,7 @@ def main():
     # Other games here
 
     # Final score
-    print("Your final score is {}, you have an average of ".format(score, score / len(games)))
+    print("Your final score is {}, you have an average of {}".format(score, score / len(games)))
     print("Thanks for playing!")
 
 if __name__ == '__main__':
