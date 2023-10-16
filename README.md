@@ -5,6 +5,7 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Trystan4_MGCP&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Trystan4_MGCP)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Trystan4_MGCP&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Trystan4_MGCP)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Trystan4_MGCP&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Trystan4_MGCP)
+
 Multi Games Competition in Python
 
 ## Test yourself
