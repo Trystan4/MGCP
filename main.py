@@ -5,6 +5,10 @@ game_mode = {
     0 : "Single player",
     1 : "Two player",
 }
+games = {
+    0 : "The fair price game",
+    1 : "The Hangman's game",
+}
 
 def main():
     score = 0
@@ -13,11 +17,11 @@ def main():
         user_input = input()
         if user_input == "":
             break
-    print("Let's start the games with \"the fair price game!\"")
+    print("Let's start the games with", games.get(0))
     # fair score game 
     score = score + fair_price_game.guess_number()
 
-    print("Let's continue with \"The hangman's game!\"")
+    print("Let's continue with", games.get(1))
     # hangman's game
     mode_choose = int(input("Choose a mode for hangman's game: \n 0. Single player  \n 1. Two player \n"))
     if(mode_choose not in game_mode.keys()):
@@ -31,7 +35,8 @@ def main():
     # Other games here
 
     # Final score
-    print("Your final score is {}".format(score))
+    print("Your final score is {}, you have an average of ".format(score, score / len(games)))
+    print("Thanks for playing!")
 
 if __name__ == '__main__':
     main()
