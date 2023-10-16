@@ -8,7 +8,7 @@ def guess_number():
 
     retry = 0
     # ask the user to guess the number
-    while True:
+    while 1:
         user_guess = int(input("Guess a number between 1 and 10: "))
         retry +=1
         # check if the user's guess is correct

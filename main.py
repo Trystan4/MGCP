@@ -13,7 +13,7 @@ games = {
 def main():
     score = 0
     input("Welcome to the mini games competition. Will you outdo yourself and get a huge score?, press Enter to start")
-    while True:
+    while 1:
         user_input = input()
         if user_input == "":
             break
