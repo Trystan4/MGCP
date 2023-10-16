@@ -2,13 +2,13 @@ import random
 
 def two_player():
     word = input("Player 1, enter the word to guess: ").lower()
-    hangman(word)
+    return hangman(word)
     
 
 def single_player():
     words = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew", "kiwi", "lemon"]
     word = random.choice(words)
-    hangman(word)
+    return hangman(word)
 
 def hangman(word):
     guessed_letters = set()

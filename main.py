@@ -8,20 +8,26 @@ game_mode = {
 
 def main():
     score = 0
-
+    input("Welcome to the mini games competition. Will you outdo yourself and get a huge score?, press Enter to start")
+    while True:
+        user_input = input()
+        if user_input == "":
+            break
+    print("Let's start the games with \"the fair price game!\"")
     # fair score game 
     score = score + fair_price_game.guess_number()
 
+    print("Let's continue with \"The hangman's game!\"")
     # hangman's game
-    mode_choose = int(input("Choose a mode for hangman's game: \n 0. Two player \n 1. Single player \n"))
+    mode_choose = int(input("Choose a mode for hangman's game: \n 0. Single player  \n 1. Two player \n"))
     if(mode_choose not in game_mode.keys()):
         print("Invalid mode choose, please try again!")
         return main()
-    if(mode_choose == game_mode.single_player):
+    if(mode_choose == game_mode.get("Single player")):
         score = score + hangman_game.single_player()
     else:
         score = score + hangman_game.two_player()
-        
+
     # Other games here
 
     # Final score
