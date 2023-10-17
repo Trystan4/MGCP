@@ -1,6 +1,6 @@
-from fair_price_game import fair_price_game
-from hangman_game import hangman_game
-from rock_paper_cissor_game import rock_paper_cissor_game
+from fair_price import fair_price
+from hangman import hangman
+from rock_paper_cissor import rock_paper_cissor
 
 game_mode = {
     0 : "Single player",
@@ -22,7 +22,7 @@ def main():
             break
     print("Let's start the solo scoring mode games with", solo_games.get(0))
     # fair score game 
-    score = score + fair_price_game.guess_number()
+    score = score + fair_price.guess_number()
 
     print("Let's continue with", solo_games.get(1))
     # hangman's game
@@ -31,13 +31,13 @@ def main():
         print("Invalid mode choose, please try again!")
         return main()
     if(mode_choose == game_mode.get("Single player")):
-        score = score + hangman_game.single_player()
+        score = score + hangman.single_player()
     else:
-        score = score + hangman_game.two_player()
+        score = score + hangman.two_player()
 
     # Rock paper cissors game
     print("Let's continue with", solo_games.get(2))
-    score = score + rock_paper_cissor_game.play_one_player()
+    score = score + rock_paper_cissor.play_one_player()
 
     # Final score
     print("Your final score is {}, you have an average of {}".format(score, score / len(games)))
